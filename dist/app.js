@@ -30,6 +30,7 @@ async function renderChart(el){
     if(small)spec.layer[1].mark.fontSize=11;
    }
    if(el.id==='activity'){spec.encoding.y.axis.labelLimit=narrow?145:230;if(small)spec.encoding.y.axis.labelFontSize=11;}
+   if(['heatmap','cohort-change','activity'].includes(el.id)){spec.encoding.y.axis.minExtent=spec.encoding.y.axis.labelLimit+12;spec.encoding.y.axis.maxExtent=spec.encoding.y.axis.labelLimit+12;}
    if(el.id==='mosaic'&&narrow){spec.layer[1].mark.fontSize=small?10:12;spec.transform[5].calculate="format(datum.Percent, '.1f') + '%'";}
    if(el.id==='waffle')spec.height=Math.round(w/4);
   }else if(el.id==='treemap'){spec.height=narrow?440:360;}
