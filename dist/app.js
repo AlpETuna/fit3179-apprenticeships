@@ -20,7 +20,8 @@ async function renderChart(el){
     spec.height=settings.occupationGroup==='All'?480:280;
    }
    if(el.id==='cohort-change'){
-    spec.encoding.y.axis.labelLimit=narrow?120:210;
+    spec.encoding.y.axis.labelLimit=small?120:narrow?155:210;
+    spec.encoding.y.axis.labelExpr="datum.label === 'Language other than English' ? 'Non-English language' : datum.label";
     spec.encoding.y.axis.labelFontSize=small?11:13;
     if(small){spec.layer[3].mark.dx=7;spec.layer[3].mark.align='left';spec.layer[3].mark.dy=-12;}
    }
