@@ -14,6 +14,7 @@ async function renderChart(el){
   if(spec.$schema.includes('vega-lite')){
    if(spec.params)spec.params.forEach(p=>{if(p.name in settings)p.value=settings[p.name];});
    if(['choropleth','symbols'].includes(el.id)){spec.height=small?355:420;}
+   if(el.id==='cartogram')spec.height=small?370:470;
    if(el.id==='heatmap'){
     spec.encoding.y.axis.labelLimit=small?115:narrow?190:280;
     spec.encoding.y.axis.labelFontSize=small?11:13;
@@ -43,7 +44,7 @@ async function renderChart(el){
 async function setSignal(ids,name,value){settings[name]=value;await Promise.all(ids.map(async id=>{const view=views.get(id);if(view){view.signal(name,value);await view.runAsync();}}));}
 async function updateState(){
  const value=document.getElementById('state-focus').value;
- await setSignal(['choropleth','symbols','tile-map'],'focusState',value);
+ await setSignal(['choropleth','symbols','cartogram'],'focusState',value);
  const rows=await getData('states.json'),s=rows.find(d=>d.State===value);
  document.getElementById('state-name').textContent=s?s.State:'Australia';
  document.getElementById('state-rate').textContent=s?s.Rate.toFixed(1):'10.2';

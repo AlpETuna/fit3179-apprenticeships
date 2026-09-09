@@ -23,7 +23,7 @@ Serve `dist/` over HTTP; opening the HTML as a `file://` URL prevents normal cha
 
 The site has twelve separately specified charts, three distinct map idioms, two statistical sources, author/date/source credits, an AI acknowledgement, visible units and definitions, and optional data tables. All main chapters remain visible on one vertically scrolling webpage.
 
-The proposed advanced idioms are waterfall, choropleth, tile cartogram, treemap, heatmap, bump chart, waffle and mosaic. The proportional-symbol map and indexed dumbbell add variety but are not relied on for this conservative advanced-idiom count. The marker determines idiom classifications and effectiveness; no grade is guaranteed.
+The proposed advanced idioms are waterfall, choropleth, geographic area cartogram, treemap, heatmap, bump chart, waffle and mosaic. The proportional-symbol map and indexed dumbbell add variety but are not relied on for this conservative advanced-idiom count. The marker determines idiom classifications and effectiveness; no grade is guaranteed.
 
 The rubric's physical hand-drawn sketch and interview are personal submission requirements. They cannot be completed by presenting a digital graphic as a hand-drawn sketch. A scan of the student's genuine sketch can be added to `dist/submission/` when available.
 

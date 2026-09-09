@@ -30,7 +30,7 @@ NCVER attribution: NCVER 2026, *Apprentices and trainees 2025: December quarter*
 
 `Contracts`, `Before`, `After` and `Previous` are training contracts, not unique people. `Year` denotes 31 December for active-contract snapshots. `Group` is the NCVER occupational trade classification. `Rate` is contracts per 1,000 residents; `Share`, `Change`, `ChangeFrom2021` and `Percent` are percentage values, not fractions. `Rank` is an integer with 1 representing the largest count in the displayed comparison set.
 
-`Longitude` and `Latitude` in states.json are approximate cartographic label/symbol anchors chosen for legibility; they are not training locations or observations. `Column` and `Row` are schematic tile-map layout coordinates, not geographic measurements.
+`Longitude` and `Latitude` in states.json are approximate cartographic label/symbol anchors chosen for legibility; they are not training locations or observations. `Column` and `Row` are unused legacy layout fields.
 
 ## Calculations
 
@@ -56,3 +56,7 @@ Keep state codes 1–8. Omit offshore polygon parts entirely south of 44°S and 
 NCVER counts are independently rounded to the nearest five. Category sums may differ from published totals through rounding and unknown classifications. Recent figures are estimates and may be revised for up to seven quarters. Stock counts must not be added over time. Annual activity counts are different events across different contracts and do not represent a single cohort. In particular, annual completions divided by annual commencements is **not** a completion probability.
 
 The `scripts/build_data.py` script reproduces the tabular JSON from the transcribed source values. `scripts/build_specs.py` documents the Vega/Vega-Lite transformations and chart encodings. The public `specs/` directory holds the actual readable specifications used by the site.
+
+### Geographic area cartogram (chart 05)
+
+The actual simplified ABS polygons are first projected to spherical Albers equal-area planar coordinates (standard parallels −18°, −36°; central meridian 134°; latitude of origin −27°). Each state is scaled uniformly around its area-weighted centroid by the square root of (common area-per-contract constant × contracts ÷ original projected area). Therefore coloured polygon area, rather than land area, is proportional to active contracts. Shape and orientation are preserved. Faint original boundaries retain geographic context. The ACT is translated east to avoid overlap and connected to its true position; it uses the same area scale as every other jurisdiction. The geometry builder verifies all eight polygon areas against their contract counts within 0.01%. These files contain projected planar coordinates and intentionally use Vega-Lite’s identity projection with reflected y. Code: `scripts/build_cartogram.py`.

@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Non-contiguous area cartogram: actual ABS state shapes are uniformly resized in Albers equal-area coordinates so their displayed areas are proportional to December 2025 active contracts. Faint outlines retain actual geography. ACT is moved east, at the same area scale, with a leader to its location. Colour shows 2024\u20132025 percentage change.",
+  "height": 470,
+  "params": [
+    {
+      "name": "focusState",
+      "value": "All"
+    }
+  ],
+  "projection": {
+    "type": "identity",
+    "reflectY": true
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/cartogram-reference.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f5f7f9",
+        "stroke": "#b8c8d3",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "data": {
+        "url": "data/cartogram-leaders.json"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#506172",
+        "strokeWidth": 1,
+        "strokeDash": [
+          3,
+          3
+        ]
+      },
+      "encoding": {
+        "longitude": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "x2"
+        },
+        "latitude2": {
+          "field": "y2"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/cartogram-contracts.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "color": {
+          "field": "properties.Change",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -20,
+              0
+            ],
+            "range": [
+              "#9a381a",
+              "#fbe7db"
+            ]
+          },
+          "legend": {
+            "title": "Change in active contracts (%)",
+            "orient": "bottom",
+            "gradientLength": 220
+          }
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.properties.State === focusState",
+            "value": "#132a40"
+          },
+          "value": "white"
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.properties.State === focusState",
+            "value": 3
+          },
+          "value": 1
+        },
+        "tooltip": [
+          {
+            "field": "properties.State",
+            "title": "State / territory"
+          },
+          {
+            "field": "properties.Contracts",
+            "type": "quantitative",
+            "format": ",",
+            "title": "2025 active contracts"
+          },
+          {
+            "field": "properties.Change",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "2024\u20132025 change (%)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/cartogram-labels.json"
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "longitude": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Short"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Change < -10 && !datum.External",
+            "value": "white"
+          },
+          "value": "#132a40"
+        }
+      }
+    }
+  ]
+}

@@ -60,3 +60,6 @@ for path in R.rglob('*'):
 size=sum(p.stat().st_size for p in R.rglob('*') if p.is_file())
 assert size<4_000_000,f'Site too large: {size}'
 print(f'PASS: 12 charts; 3 map idioms; local references; 8 state joins; rates, ranks, totals and geometry; no student ID in public files. Public assets: {size:,} bytes.')
+
+import runpy
+runpy.run_path(str(Path(__file__).with_name("validate_cartogram.py")))
