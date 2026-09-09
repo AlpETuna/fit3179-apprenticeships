@@ -127,28 +127,7 @@
         "type": "quantitative",
         "format": ","
       }
-    ],
-    "strokeDash": {
-      "field": "Group",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "Trade",
-          "Non-trade"
-        ],
-        "range": [
-          [
-            1,
-            0
-          ],
-          [
-            6,
-            3
-          ]
-        ]
-      },
-      "legend": null
-    }
+    ]
   },
   "layer": [
     {
@@ -158,6 +137,31 @@
         "point": {
           "filled": true,
           "size": 50
+        }
+      },
+      "encoding": {
+        "strokeDash": {
+          "field": "Group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Trade",
+              "Non-trade"
+            ],
+            "range": [
+              [
+                1,
+                0
+              ],
+              [
+                6,
+                3
+              ]
+            ]
+          },
+          "legend": {
+            "title": null
+          }
         }
       }
     },
