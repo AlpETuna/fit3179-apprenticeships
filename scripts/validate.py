@@ -2,6 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import json,re
+from urllib.parse import urlsplit
 R=Path(__file__).resolve().parents[1]/'dist'
 class Page(HTMLParser):
  def __init__(self):super().__init__();self.ids=[];self.charts=[];self.refs=[];self.figures=0
@@ -17,7 +18,7 @@ assert len(p.ids)==len(set(p.ids)), 'Duplicate HTML IDs'
 assert p.figures==12 and len(p.charts)==12,'Expected twelve charts'
 for ref in p.refs:
  if ref.startswith(('#','http','data:')):continue
- assert (R/ref).exists(),f'Missing public asset {ref}'
+ assert (R/urlsplit(ref).path).exists(),f'Missing public asset {ref}'
 for ref in re.findall(r'url\(([^)]+)\)',(R/'fonts.css').read_text()):assert (R/ref).exists(),ref
 for name in p.charts:
  spec=json.loads((R/'specs'/name).read_text());assert spec['$schema'].startswith('https://vega.github.io/schema/')
