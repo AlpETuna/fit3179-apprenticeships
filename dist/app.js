@@ -6,7 +6,7 @@ const nf=new Intl.NumberFormat('en-AU');
 async function getData(name){if(!dataCache.has(name)){dataCache.set(name,fetch('data/'+name).then(r=>{if(!r.ok)throw new Error('Data unavailable');return r.json();}));}return dataCache.get(name);}
 async function renderChart(el){
  try{
-  if(!specs.has(el.dataset.spec)){const r=await fetch('specs/'+el.dataset.spec);if(!r.ok)throw new Error('Chart specification unavailable');specs.set(el.dataset.spec,await r.json());}
+  if(!specs.has(el.dataset.spec)){const r=await fetch('specs/'+el.dataset.spec,{cache:'no-cache'});if(!r.ok)throw new Error('Chart specification unavailable');specs.set(el.dataset.spec,await r.json());}
   const spec=structuredClone(specs.get(el.dataset.spec));
   const w=Math.max(230,Math.floor(el.clientWidth));const narrow=w<500;const small=w<380;
   spec.config={...theme,...spec.config};
