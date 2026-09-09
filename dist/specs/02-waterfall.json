@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "Step": "2022 peak",
+        "Start": 0,
+        "End": 372885,
+        "Kind": "Total",
+        "Label": "372,885",
+        "Order": 0
+      },
+      {
+        "Step": "2023 change",
+        "Start": 337245,
+        "End": 372885,
+        "Kind": "Decrease",
+        "Label": "\u221235,640",
+        "Order": 1
+      },
+      {
+        "Step": "2024 change",
+        "Start": 309080,
+        "End": 337245,
+        "Kind": "Decrease",
+        "Label": "\u221228,165",
+        "Order": 2
+      },
+      {
+        "Step": "2025 change",
+        "Start": 282430,
+        "End": 309080,
+        "Kind": "Decrease",
+        "Label": "\u221226,650",
+        "Order": 3
+      },
+      {
+        "Step": "2025 total",
+        "Start": 0,
+        "End": 282430,
+        "Kind": "Total",
+        "Label": "282,430",
+        "Order": 4
+      }
+    ]
+  },
+  "description": "Waterfall: changes in national active contracts from the 2022 peak to 2025. All bars use a common zero-based vertical scale.",
+  "encoding": {
+    "x": {
+      "field": "Step",
+      "type": "nominal",
+      "sort": {
+        "field": "Order"
+      },
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "labelLimit": 140
+      }
+    },
+    "y": {
+      "field": "End",
+      "type": "quantitative",
+      "axis": {
+        "title": "Active contracts",
+        "format": "~s"
+      },
+      "scale": {
+        "domain": [
+          0,
+          420000
+        ]
+      }
+    },
+    "y2": {
+      "field": "Start"
+    },
+    "tooltip": [
+      {
+        "field": "Step"
+      },
+      {
+        "field": "Label",
+        "title": "Contracts"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "size": 70
+      },
+      "encoding": {
+        "color": {
+          "field": "Kind",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Total",
+              "Decrease"
+            ],
+            "range": [
+              "#176b91",
+              "#c45222"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -10,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "Label"
+        },
+        "y2": null
+      }
+    }
+  ]
+}

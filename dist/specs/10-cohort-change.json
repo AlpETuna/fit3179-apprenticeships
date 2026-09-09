@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 335,
+  "data": {
+    "url": "data/cohort-change.json"
+  },
+  "transform": [
+    {
+      "calculate": "datum.After / datum.Before * 100",
+      "as": "Index"
+    },
+    {
+      "calculate": "format(datum.Change, '.1f') + '%'",
+      "as": "Label"
+    }
+  ],
+  "description": "Dumbbell comparison: each cohort\u2019s active contracts in 2025 as an index with its 2024 count set to 100. Groups overlap.",
+  "encoding": {
+    "y": {
+      "field": "Cohort",
+      "type": "nominal",
+      "sort": [
+        "Females",
+        "Language other than English",
+        "Regional & remote",
+        "Indigenous Australians",
+        "People with disability"
+      ],
+      "axis": {
+        "title": null,
+        "labelLimit": 230,
+        "labelFontSize": 13
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Cohort"
+      },
+      {
+        "field": "Before",
+        "type": "quantitative",
+        "format": ",",
+        "title": "2024 contracts"
+      },
+      {
+        "field": "After",
+        "type": "quantitative",
+        "format": ",",
+        "title": "2025 contracts"
+      },
+      {
+        "field": "Change",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Change (%)"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#c9d5df"
+      },
+      "encoding": {
+        "x": {
+          "field": "Index",
+          "type": "quantitative",
+          "axis": {
+            "title": "2024 = 100",
+            "values": [
+              85,
+              90,
+              95,
+              100
+            ]
+          },
+          "scale": {
+            "domain": [
+              82,
+              102
+            ],
+            "zero": false
+          }
+        },
+        "x2": {
+          "datum": 100
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 80,
+        "color": "#c9d5df"
+      },
+      "encoding": {
+        "x": {
+          "datum": 100
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 110,
+        "color": "#c45222"
+      },
+      "encoding": {
+        "x": {
+          "field": "Index",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "fontSize": 13,
+        "color": "#c45222",
+        "fontWeight": 600
+      },
+      "encoding": {
+        "x": {
+          "field": "Index",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Label"
+        }
+      }
+    }
+  ]
+}

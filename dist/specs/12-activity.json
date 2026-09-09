@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 300,
+  "data": {
+    "url": "data/annual-activity.json"
+  },
+  "description": "Grouped bars compare four separate annual activity counts in 2025. They are not flows through one cohort and cannot be used to calculate a completion probability.",
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "y": {
+      "field": "Activity",
+      "type": "nominal",
+      "sort": [
+        "Commencements",
+        "Recommencements",
+        "Completions",
+        "Cancellations / withdrawals"
+      ],
+      "axis": {
+        "title": null,
+        "labelLimit": 230
+      }
+    },
+    "yOffset": {
+      "field": "Group",
+      "type": "nominal",
+      "sort": [
+        "Trade",
+        "Non-trade"
+      ]
+    },
+    "x": {
+      "field": "Contracts",
+      "type": "quantitative",
+      "axis": {
+        "title": "Contracts recorded during 2025",
+        "format": "~s"
+      }
+    },
+    "color": {
+      "field": "Group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Trade",
+          "Non-trade"
+        ],
+        "range": [
+          "#176b91",
+          "#c45222"
+        ]
+      },
+      "legend": {
+        "title": null,
+        "symbolType": "square"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Activity"
+      },
+      {
+        "field": "Group"
+      },
+      {
+        "field": "Contracts",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]
+  }
+}

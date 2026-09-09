@@ -1,0 +1,222 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 365,
+  "params": [
+    {
+      "name": "focusState",
+      "value": "All"
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0,
+      0
+    ],
+    "center": [
+      0,
+      -27
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/abs-states-simplified.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.State",
+          "from": {
+            "data": {
+              "url": "data/states.json"
+            },
+            "key": "State",
+            "fields": [
+              "Contracts",
+              "Population",
+              "Rate",
+              "Short",
+              "Change"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 1.3
+      },
+      "encoding": {
+        "color": {
+          "field": "Rate",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              7,
+              13
+            ],
+            "range": [
+              "#e5f1f6",
+              "#07516f"
+            ]
+          },
+          "legend": {
+            "title": "Contracts per 1,000 residents",
+            "orient": "bottom",
+            "format": ".0f",
+            "gradientLength": 230
+          }
+        },
+        "stroke": {
+          "condition": {
+            "test": "datum.properties.State === focusState",
+            "value": "#c45222"
+          },
+          "value": "white"
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "datum.properties.State === focusState",
+            "value": 3
+          },
+          "value": 1.3
+        },
+        "tooltip": [
+          {
+            "field": "properties.State",
+            "title": "State / territory"
+          },
+          {
+            "field": "Contracts",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "Rate",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Contracts per 1,000 residents"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/states.json"
+      },
+      "transform": [
+        {
+          "filter": "datum.Short !== 'ACT'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 700,
+        "stroke": "white",
+        "strokeWidth": 0.2,
+        "dy": -2
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Short"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.Rate >= 10.4",
+            "value": "#ffffff"
+          },
+          "value": "#132a40"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "Longitude": 149.1,
+            "Latitude": -35.4,
+            "Longitude2": 154,
+            "Latitude2": -36.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#132a40",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "Longitude2"
+        },
+        "latitude2": {
+          "field": "Latitude2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "Longitude": 154,
+            "Latitude": -36.5,
+            "Label": "ACT"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 3,
+        "fontSize": 12,
+        "fontWeight": 700,
+        "color": "#132a40"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "Label"
+        }
+      }
+    }
+  ],
+  "description": "choropleth map of Australian training contracts at 31 December 2025. ABS generalised boundaries, Albers equal-area projection."
+}

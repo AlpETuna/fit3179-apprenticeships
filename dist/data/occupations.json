@@ -1,0 +1,562 @@
+[
+  {
+    "Group": "Trade",
+    "Occupation": "Automotive & engineering",
+    "FullName": "Automotive and Engineering Trades Workers",
+    "Year": 2021,
+    "Contracts": 53575,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Automotive & engineering",
+    "FullName": "Automotive and Engineering Trades Workers",
+    "Year": 2022,
+    "Contracts": 56980,
+    "ChangeFrom2021": 6.356
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Automotive & engineering",
+    "FullName": "Automotive and Engineering Trades Workers",
+    "Year": 2023,
+    "Contracts": 60460,
+    "ChangeFrom2021": 12.851
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Automotive & engineering",
+    "FullName": "Automotive and Engineering Trades Workers",
+    "Year": 2024,
+    "Contracts": 61000,
+    "ChangeFrom2021": 13.859
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Automotive & engineering",
+    "FullName": "Automotive and Engineering Trades Workers",
+    "Year": 2025,
+    "Contracts": 58350,
+    "ChangeFrom2021": 8.913
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Construction",
+    "FullName": "Construction Trades Workers",
+    "Year": 2021,
+    "Contracts": 65565,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Construction",
+    "FullName": "Construction Trades Workers",
+    "Year": 2022,
+    "Contracts": 66795,
+    "ChangeFrom2021": 1.876
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Construction",
+    "FullName": "Construction Trades Workers",
+    "Year": 2023,
+    "Contracts": 67140,
+    "ChangeFrom2021": 2.402
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Construction",
+    "FullName": "Construction Trades Workers",
+    "Year": 2024,
+    "Contracts": 63610,
+    "ChangeFrom2021": -2.982
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Construction",
+    "FullName": "Construction Trades Workers",
+    "Year": 2025,
+    "Contracts": 59355,
+    "ChangeFrom2021": -9.472
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Electrical & telecoms",
+    "FullName": "Electrotechnology and Telecommunications Trades Workers",
+    "Year": 2021,
+    "Contracts": 47475,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Electrical & telecoms",
+    "FullName": "Electrotechnology and Telecommunications Trades Workers",
+    "Year": 2022,
+    "Contracts": 50795,
+    "ChangeFrom2021": 6.993
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Electrical & telecoms",
+    "FullName": "Electrotechnology and Telecommunications Trades Workers",
+    "Year": 2023,
+    "Contracts": 53175,
+    "ChangeFrom2021": 12.006
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Electrical & telecoms",
+    "FullName": "Electrotechnology and Telecommunications Trades Workers",
+    "Year": 2024,
+    "Contracts": 54685,
+    "ChangeFrom2021": 15.187
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Electrical & telecoms",
+    "FullName": "Electrotechnology and Telecommunications Trades Workers",
+    "Year": 2025,
+    "Contracts": 53845,
+    "ChangeFrom2021": 13.418
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Engineering, ICT & science",
+    "FullName": "Engineering, ICT and Science Technicians",
+    "Year": 2021,
+    "Contracts": 8440,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Engineering, ICT & science",
+    "FullName": "Engineering, ICT and Science Technicians",
+    "Year": 2022,
+    "Contracts": 10050,
+    "ChangeFrom2021": 19.076
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Engineering, ICT & science",
+    "FullName": "Engineering, ICT and Science Technicians",
+    "Year": 2023,
+    "Contracts": 6650,
+    "ChangeFrom2021": -21.209
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Engineering, ICT & science",
+    "FullName": "Engineering, ICT and Science Technicians",
+    "Year": 2024,
+    "Contracts": 5720,
+    "ChangeFrom2021": -32.227
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Engineering, ICT & science",
+    "FullName": "Engineering, ICT and Science Technicians",
+    "Year": 2025,
+    "Contracts": 5145,
+    "ChangeFrom2021": -39.04
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Food trades",
+    "FullName": "Food Trades Workers",
+    "Year": 2021,
+    "Contracts": 12810,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Food trades",
+    "FullName": "Food Trades Workers",
+    "Year": 2022,
+    "Contracts": 13745,
+    "ChangeFrom2021": 7.299
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Food trades",
+    "FullName": "Food Trades Workers",
+    "Year": 2023,
+    "Contracts": 11955,
+    "ChangeFrom2021": -6.674
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Food trades",
+    "FullName": "Food Trades Workers",
+    "Year": 2024,
+    "Contracts": 11230,
+    "ChangeFrom2021": -12.334
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Food trades",
+    "FullName": "Food Trades Workers",
+    "Year": 2025,
+    "Contracts": 9970,
+    "ChangeFrom2021": -22.17
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Other technicians & trades",
+    "FullName": "Other Technicians and Trades Workers",
+    "Year": 2021,
+    "Contracts": 19230,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Other technicians & trades",
+    "FullName": "Other Technicians and Trades Workers",
+    "Year": 2022,
+    "Contracts": 19720,
+    "ChangeFrom2021": 2.548
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Other technicians & trades",
+    "FullName": "Other Technicians and Trades Workers",
+    "Year": 2023,
+    "Contracts": 17595,
+    "ChangeFrom2021": -8.502
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Other technicians & trades",
+    "FullName": "Other Technicians and Trades Workers",
+    "Year": 2024,
+    "Contracts": 15840,
+    "ChangeFrom2021": -17.629
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Other technicians & trades",
+    "FullName": "Other Technicians and Trades Workers",
+    "Year": 2025,
+    "Contracts": 14330,
+    "ChangeFrom2021": -25.481
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Animal, agricultural & horticultural",
+    "FullName": "Skilled Animal, Agricultural and Horticultural Workers",
+    "Year": 2021,
+    "Contracts": 9730,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Animal, agricultural & horticultural",
+    "FullName": "Skilled Animal, Agricultural and Horticultural Workers",
+    "Year": 2022,
+    "Contracts": 9960,
+    "ChangeFrom2021": 2.364
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Animal, agricultural & horticultural",
+    "FullName": "Skilled Animal, Agricultural and Horticultural Workers",
+    "Year": 2023,
+    "Contracts": 9165,
+    "ChangeFrom2021": -5.807
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Animal, agricultural & horticultural",
+    "FullName": "Skilled Animal, Agricultural and Horticultural Workers",
+    "Year": 2024,
+    "Contracts": 8370,
+    "ChangeFrom2021": -13.977
+  },
+  {
+    "Group": "Trade",
+    "Occupation": "Animal, agricultural & horticultural",
+    "FullName": "Skilled Animal, Agricultural and Horticultural Workers",
+    "Year": 2025,
+    "Contracts": 7950,
+    "ChangeFrom2021": -18.294
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Clerical & administrative",
+    "FullName": "Clerical and Administrative Workers",
+    "Year": 2021,
+    "Contracts": 35995,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Clerical & administrative",
+    "FullName": "Clerical and Administrative Workers",
+    "Year": 2022,
+    "Contracts": 40565,
+    "ChangeFrom2021": 12.696
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Clerical & administrative",
+    "FullName": "Clerical and Administrative Workers",
+    "Year": 2023,
+    "Contracts": 21665,
+    "ChangeFrom2021": -39.811
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Clerical & administrative",
+    "FullName": "Clerical and Administrative Workers",
+    "Year": 2024,
+    "Contracts": 13010,
+    "ChangeFrom2021": -63.856
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Clerical & administrative",
+    "FullName": "Clerical and Administrative Workers",
+    "Year": 2025,
+    "Contracts": 10155,
+    "ChangeFrom2021": -71.788
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Community & personal service",
+    "FullName": "Community and Personal Service Workers",
+    "Year": 2021,
+    "Contracts": 39335,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Community & personal service",
+    "FullName": "Community and Personal Service Workers",
+    "Year": 2022,
+    "Contracts": 43855,
+    "ChangeFrom2021": 11.491
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Community & personal service",
+    "FullName": "Community and Personal Service Workers",
+    "Year": 2023,
+    "Contracts": 44240,
+    "ChangeFrom2021": 12.47
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Community & personal service",
+    "FullName": "Community and Personal Service Workers",
+    "Year": 2024,
+    "Contracts": 40405,
+    "ChangeFrom2021": 2.72
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Community & personal service",
+    "FullName": "Community and Personal Service Workers",
+    "Year": 2025,
+    "Contracts": 35915,
+    "ChangeFrom2021": -8.695
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Labourers",
+    "FullName": "Labourers",
+    "Year": 2021,
+    "Contracts": 13225,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Labourers",
+    "FullName": "Labourers",
+    "Year": 2022,
+    "Contracts": 13285,
+    "ChangeFrom2021": 0.454
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Labourers",
+    "FullName": "Labourers",
+    "Year": 2023,
+    "Contracts": 10790,
+    "ChangeFrom2021": -18.412
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Labourers",
+    "FullName": "Labourers",
+    "Year": 2024,
+    "Contracts": 9710,
+    "ChangeFrom2021": -26.578
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Labourers",
+    "FullName": "Labourers",
+    "Year": 2025,
+    "Contracts": 8350,
+    "ChangeFrom2021": -36.862
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Machinery operators & drivers",
+    "FullName": "Machinery Operators and Drivers",
+    "Year": 2021,
+    "Contracts": 14710,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Machinery operators & drivers",
+    "FullName": "Machinery Operators and Drivers",
+    "Year": 2022,
+    "Contracts": 16710,
+    "ChangeFrom2021": 13.596
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Machinery operators & drivers",
+    "FullName": "Machinery Operators and Drivers",
+    "Year": 2023,
+    "Contracts": 15270,
+    "ChangeFrom2021": 3.807
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Machinery operators & drivers",
+    "FullName": "Machinery Operators and Drivers",
+    "Year": 2024,
+    "Contracts": 13565,
+    "ChangeFrom2021": -7.784
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Machinery operators & drivers",
+    "FullName": "Machinery Operators and Drivers",
+    "Year": 2025,
+    "Contracts": 11555,
+    "ChangeFrom2021": -21.448
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Managers",
+    "FullName": "Managers",
+    "Year": 2021,
+    "Contracts": 5120,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Managers",
+    "FullName": "Managers",
+    "Year": 2022,
+    "Contracts": 4275,
+    "ChangeFrom2021": -16.504
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Managers",
+    "FullName": "Managers",
+    "Year": 2023,
+    "Contracts": 2355,
+    "ChangeFrom2021": -54.004
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Managers",
+    "FullName": "Managers",
+    "Year": 2024,
+    "Contracts": 1320,
+    "ChangeFrom2021": -74.219
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Managers",
+    "FullName": "Managers",
+    "Year": 2025,
+    "Contracts": 980,
+    "ChangeFrom2021": -80.859
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Professionals",
+    "FullName": "Professionals",
+    "Year": 2021,
+    "Contracts": 2365,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Professionals",
+    "FullName": "Professionals",
+    "Year": 2022,
+    "Contracts": 3525,
+    "ChangeFrom2021": 49.049
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Professionals",
+    "FullName": "Professionals",
+    "Year": 2023,
+    "Contracts": 2210,
+    "ChangeFrom2021": -6.554
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Professionals",
+    "FullName": "Professionals",
+    "Year": 2024,
+    "Contracts": 1170,
+    "ChangeFrom2021": -50.529
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Professionals",
+    "FullName": "Professionals",
+    "Year": 2025,
+    "Contracts": 955,
+    "ChangeFrom2021": -59.619
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Sales workers",
+    "FullName": "Sales Workers",
+    "Year": 2021,
+    "Contracts": 19985,
+    "ChangeFrom2021": 0.0
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Sales workers",
+    "FullName": "Sales Workers",
+    "Year": 2022,
+    "Contracts": 22525,
+    "ChangeFrom2021": 12.71
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Sales workers",
+    "FullName": "Sales Workers",
+    "Year": 2023,
+    "Contracts": 14555,
+    "ChangeFrom2021": -27.17
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Sales workers",
+    "FullName": "Sales Workers",
+    "Year": 2024,
+    "Contracts": 9425,
+    "ChangeFrom2021": -52.84
+  },
+  {
+    "Group": "Non-trade",
+    "Occupation": "Sales workers",
+    "FullName": "Sales Workers",
+    "Year": 2025,
+    "Contracts": 5570,
+    "ChangeFrom2021": -72.129
+  }
+]

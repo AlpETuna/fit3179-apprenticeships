@@ -1,0 +1,171 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "description": "Treemap of active contracts in the seven trade occupation groups, December 2025. Rectangle areas encode published counts.",
+  "width": 900,
+  "height": 360,
+  "padding": 0,
+  "autosize": "fit",
+  "data": [
+    {
+      "name": "tree",
+      "url": "data/trade-tree.json",
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "Contracts",
+          "sort": {
+            "field": "value",
+            "order": "descending"
+          },
+          "method": "squarify",
+          "ratio": 1.4,
+          "size": [
+            {
+              "signal": "width"
+            },
+            {
+              "signal": "height"
+            }
+          ],
+          "paddingInner": 4,
+          "round": true
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "!datum.children"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "data": "leaves",
+        "field": "Occupation"
+      },
+      "range": [
+        "#176b91",
+        "#24506d",
+        "#3981a2",
+        "#516f86",
+        "#698c9e",
+        "#759eb0",
+        "#8bb4c4"
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "field": "x0"
+          },
+          "y": {
+            "field": "y0"
+          },
+          "x2": {
+            "field": "x1"
+          },
+          "y2": {
+            "field": "y1"
+          },
+          "fill": {
+            "scale": "color",
+            "field": "Occupation"
+          },
+          "tooltip": {
+            "signal": "{'Occupation':datum.FullName,'Active contracts':format(datum.Contracts,','),'Share of shown groups':format(datum.Contracts / 208945,'.1%')}"
+          }
+        },
+        "hover": {
+          "fillOpacity": {
+            "value": 0.85
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "datum.x0+12"
+          },
+          "y": {
+            "signal": "datum.y0+19"
+          },
+          "text": {
+            "field": "Label"
+          },
+          "fontSize": {
+            "value": 15
+          },
+          "lineHeight": {
+            "value": 18
+          },
+          "fontWeight": {
+            "value": 600
+          },
+          "fill": {
+            "value": "white"
+          },
+          "limit": {
+            "signal": "max(0,datum.x1-datum.x0-22)"
+          },
+          "opacity": {
+            "signal": "datum.x1-datum.x0 > 80 && datum.y1-datum.y0 > 48 ? 1 : 0"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {
+        "data": "leaves"
+      },
+      "encode": {
+        "update": {
+          "x": {
+            "signal": "datum.x0+12"
+          },
+          "y": {
+            "signal": "datum.y1-15"
+          },
+          "text": {
+            "signal": "format(datum.Contracts,',')"
+          },
+          "fontSize": {
+            "value": 20
+          },
+          "fill": {
+            "value": "white"
+          },
+          "opacity": {
+            "signal": "datum.x1-datum.x0 > 80 && datum.y1-datum.y0 > 80 ? 1 : 0"
+          }
+        }
+      }
+    }
+  ]
+}

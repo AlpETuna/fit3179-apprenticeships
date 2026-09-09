@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 235,
+  "data": {
+    "url": "data/cohorts.json"
+  },
+  "params": [
+    {
+      "name": "cohortFocus",
+      "value": "Females"
+    }
+  ],
+  "description": "Waffle chart: share of active contracts associated with a selected cohort in 2025. One square is one percentage point; share is rounded to the nearest whole square. Cohorts overlap.",
+  "transform": [
+    {
+      "filter": "datum.Year === 2025 && datum.Cohort === cohortFocus"
+    },
+    {
+      "calculate": "sequence(0,100)",
+      "as": "cells"
+    },
+    {
+      "flatten": [
+        "cells"
+      ]
+    },
+    {
+      "calculate": "datum.cells % 20",
+      "as": "col"
+    },
+    {
+      "calculate": "floor(datum.cells/20)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.cells < round(datum.Share) ? 'Selected cohort' : 'All other contracts'",
+      "as": "Membership"
+    }
+  ],
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 1,
+    "stroke": "white",
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "Membership",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Selected cohort",
+          "All other contracts"
+        ],
+        "range": [
+          "#c45222",
+          "#e3eaf0"
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Cohort"
+      },
+      {
+        "field": "Contracts",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "Share",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Share of all contracts (%)"
+      }
+    ]
+  }
+}

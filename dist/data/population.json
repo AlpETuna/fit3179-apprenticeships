@@ -1,0 +1,50 @@
+[
+  {
+    "State": "New South Wales",
+    "Year": 2025,
+    "Population": 8641100,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "Victoria",
+    "Year": 2025,
+    "Population": 7121900,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "Queensland",
+    "Year": 2025,
+    "Population": 5712100,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "South Australia",
+    "Year": 2025,
+    "Population": 1910600,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2025,
+    "Population": 3076500,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2025,
+    "Population": 579100,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2025,
+    "Population": 267500,
+    "Unit": "persons; published in thousands to one decimal"
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2025,
+    "Population": 487200,
+    "Unit": "persons; published in thousands to one decimal"
+  }
+]

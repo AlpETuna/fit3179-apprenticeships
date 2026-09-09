@@ -1,0 +1,302 @@
+[
+  {
+    "Occupation": "Child carers",
+    "Year": 2021,
+    "Contracts": 14390,
+    "Rank": 1
+  },
+  {
+    "Occupation": "General clerks",
+    "Year": 2021,
+    "Contracts": 14290,
+    "Rank": 2
+  },
+  {
+    "Occupation": "Hospitality workers (nfd)",
+    "Year": 2021,
+    "Contracts": 11235,
+    "Rank": 3
+  },
+  {
+    "Occupation": "Earthmoving plant operators",
+    "Year": 2021,
+    "Contracts": 5505,
+    "Rank": 4
+  },
+  {
+    "Occupation": "Purchasing & supply clerks",
+    "Year": 2021,
+    "Contracts": 5165,
+    "Rank": 5
+  },
+  {
+    "Occupation": "Real estate sales agents",
+    "Year": 2021,
+    "Contracts": 5020,
+    "Rank": 6
+  },
+  {
+    "Occupation": "Drillers, miners & shot firers",
+    "Year": 2021,
+    "Contracts": 3605,
+    "Rank": 7
+  },
+  {
+    "Occupation": "Truck drivers",
+    "Year": 2021,
+    "Contracts": 2680,
+    "Rank": 8
+  },
+  {
+    "Occupation": "Welfare support workers",
+    "Year": 2021,
+    "Contracts": 2375,
+    "Rank": 9
+  },
+  {
+    "Occupation": "Aged & disabled carers",
+    "Year": 2021,
+    "Contracts": 505,
+    "Rank": 10
+  },
+  {
+    "Occupation": "General clerks",
+    "Year": 2022,
+    "Contracts": 15980,
+    "Rank": 1
+  },
+  {
+    "Occupation": "Child carers",
+    "Year": 2022,
+    "Contracts": 15975,
+    "Rank": 2
+  },
+  {
+    "Occupation": "Hospitality workers (nfd)",
+    "Year": 2022,
+    "Contracts": 11180,
+    "Rank": 3
+  },
+  {
+    "Occupation": "Real estate sales agents",
+    "Year": 2022,
+    "Contracts": 6510,
+    "Rank": 4
+  },
+  {
+    "Occupation": "Purchasing & supply clerks",
+    "Year": 2022,
+    "Contracts": 5770,
+    "Rank": 5
+  },
+  {
+    "Occupation": "Earthmoving plant operators",
+    "Year": 2022,
+    "Contracts": 5650,
+    "Rank": 6
+  },
+  {
+    "Occupation": "Drillers, miners & shot firers",
+    "Year": 2022,
+    "Contracts": 4750,
+    "Rank": 7
+  },
+  {
+    "Occupation": "Truck drivers",
+    "Year": 2022,
+    "Contracts": 3175,
+    "Rank": 8
+  },
+  {
+    "Occupation": "Welfare support workers",
+    "Year": 2022,
+    "Contracts": 2835,
+    "Rank": 9
+  },
+  {
+    "Occupation": "Aged & disabled carers",
+    "Year": 2022,
+    "Contracts": 910,
+    "Rank": 10
+  },
+  {
+    "Occupation": "Child carers",
+    "Year": 2023,
+    "Contracts": 21225,
+    "Rank": 1
+  },
+  {
+    "Occupation": "General clerks",
+    "Year": 2023,
+    "Contracts": 8185,
+    "Rank": 2
+  },
+  {
+    "Occupation": "Hospitality workers (nfd)",
+    "Year": 2023,
+    "Contracts": 7995,
+    "Rank": 3
+  },
+  {
+    "Occupation": "Earthmoving plant operators",
+    "Year": 2023,
+    "Contracts": 5520,
+    "Rank": 4
+  },
+  {
+    "Occupation": "Real estate sales agents",
+    "Year": 2023,
+    "Contracts": 4205,
+    "Rank": 5
+  },
+  {
+    "Occupation": "Drillers, miners & shot firers",
+    "Year": 2023,
+    "Contracts": 4025,
+    "Rank": 6
+  },
+  {
+    "Occupation": "Purchasing & supply clerks",
+    "Year": 2023,
+    "Contracts": 3685,
+    "Rank": 7
+  },
+  {
+    "Occupation": "Truck drivers",
+    "Year": 2023,
+    "Contracts": 3065,
+    "Rank": 8
+  },
+  {
+    "Occupation": "Aged & disabled carers",
+    "Year": 2023,
+    "Contracts": 2850,
+    "Rank": 9
+  },
+  {
+    "Occupation": "Welfare support workers",
+    "Year": 2023,
+    "Contracts": 2220,
+    "Rank": 10
+  },
+  {
+    "Occupation": "Child carers",
+    "Year": 2024,
+    "Contracts": 21175,
+    "Rank": 1
+  },
+  {
+    "Occupation": "Hospitality workers (nfd)",
+    "Year": 2024,
+    "Contracts": 6055,
+    "Rank": 2
+  },
+  {
+    "Occupation": "Earthmoving plant operators",
+    "Year": 2024,
+    "Contracts": 5490,
+    "Rank": 3
+  },
+  {
+    "Occupation": "General clerks",
+    "Year": 2024,
+    "Contracts": 5280,
+    "Rank": 4
+  },
+  {
+    "Occupation": "Aged & disabled carers",
+    "Year": 2024,
+    "Contracts": 4185,
+    "Rank": 5
+  },
+  {
+    "Occupation": "Drillers, miners & shot firers",
+    "Year": 2024,
+    "Contracts": 2805,
+    "Rank": 6
+  },
+  {
+    "Occupation": "Real estate sales agents",
+    "Year": 2024,
+    "Contracts": 2800,
+    "Rank": 7
+  },
+  {
+    "Occupation": "Truck drivers",
+    "Year": 2024,
+    "Contracts": 2795,
+    "Rank": 8
+  },
+  {
+    "Occupation": "Purchasing & supply clerks",
+    "Year": 2024,
+    "Contracts": 2330,
+    "Rank": 9
+  },
+  {
+    "Occupation": "Welfare support workers",
+    "Year": 2024,
+    "Contracts": 1745,
+    "Rank": 10
+  },
+  {
+    "Occupation": "Child carers",
+    "Year": 2025,
+    "Contracts": 18820,
+    "Rank": 1
+  },
+  {
+    "Occupation": "Earthmoving plant operators",
+    "Year": 2025,
+    "Contracts": 4895,
+    "Rank": 2
+  },
+  {
+    "Occupation": "Hospitality workers (nfd)",
+    "Year": 2025,
+    "Contracts": 4620,
+    "Rank": 3
+  },
+  {
+    "Occupation": "Aged & disabled carers",
+    "Year": 2025,
+    "Contracts": 3770,
+    "Rank": 4
+  },
+  {
+    "Occupation": "General clerks",
+    "Year": 2025,
+    "Contracts": 3735,
+    "Rank": 5
+  },
+  {
+    "Occupation": "Drillers, miners & shot firers",
+    "Year": 2025,
+    "Contracts": 2370,
+    "Rank": 6
+  },
+  {
+    "Occupation": "Real estate sales agents",
+    "Year": 2025,
+    "Contracts": 2175,
+    "Rank": 7
+  },
+  {
+    "Occupation": "Truck drivers",
+    "Year": 2025,
+    "Contracts": 2145,
+    "Rank": 8
+  },
+  {
+    "Occupation": "Welfare support workers",
+    "Year": 2025,
+    "Contracts": 2125,
+    "Rank": 9
+  },
+  {
+    "Occupation": "Purchasing & supply clerks",
+    "Year": 2025,
+    "Contracts": 2050,
+    "Rank": 10
+  }
+]

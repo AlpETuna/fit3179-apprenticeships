@@ -1,0 +1,32 @@
+[
+  {
+    "Cohort": "People with disability",
+    "Before": 10900,
+    "After": 10695,
+    "Change": -1.9
+  },
+  {
+    "Cohort": "Indigenous Australians",
+    "Before": 19840,
+    "After": 19170,
+    "Change": -3.4
+  },
+  {
+    "Cohort": "Language other than English",
+    "Before": 29380,
+    "After": 26635,
+    "Change": -9.3
+  },
+  {
+    "Cohort": "Females",
+    "Before": 79175,
+    "After": 69440,
+    "Change": -12.3
+  },
+  {
+    "Cohort": "Regional & remote",
+    "Before": 121235,
+    "After": 111875,
+    "Change": -7.7
+  }
+]

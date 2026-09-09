@@ -1,0 +1,52 @@
+[
+  {
+    "year": 2016,
+    "Trade": 167505,
+    "Non-trade": 96455
+  },
+  {
+    "year": 2017,
+    "Trade": 168130,
+    "Non-trade": 93530
+  },
+  {
+    "year": 2018,
+    "Trade": 173480,
+    "Non-trade": 89255
+  },
+  {
+    "year": 2019,
+    "Trade": 175135,
+    "Non-trade": 84635
+  },
+  {
+    "year": 2020,
+    "Trade": 192225,
+    "Non-trade": 105430
+  },
+  {
+    "year": 2021,
+    "Trade": 216825,
+    "Non-trade": 130730
+  },
+  {
+    "year": 2022,
+    "Trade": 228050,
+    "Non-trade": 144740
+  },
+  {
+    "year": 2023,
+    "Trade": 226140,
+    "Non-trade": 111085
+  },
+  {
+    "year": 2024,
+    "Trade": 220460,
+    "Non-trade": 88600
+  },
+  {
+    "year": 2025,
+    "Trade": 208950,
+    "Non-trade": 73475
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Activity": "Commencements",
+    "Group": "Trade",
+    "Contracts": 76585
+  },
+  {
+    "Activity": "Commencements",
+    "Group": "Non-trade",
+    "Contracts": 59715
+  },
+  {
+    "Activity": "Recommencements",
+    "Group": "Trade",
+    "Contracts": 22885
+  },
+  {
+    "Activity": "Recommencements",
+    "Group": "Non-trade",
+    "Contracts": 5490
+  },
+  {
+    "Activity": "Completions",
+    "Group": "Trade",
+    "Contracts": 53390
+  },
+  {
+    "Activity": "Completions",
+    "Group": "Non-trade",
+    "Contracts": 42670
+  },
+  {
+    "Activity": "Cancellations / withdrawals",
+    "Group": "Trade",
+    "Contracts": 52380
+  },
+  {
+    "Activity": "Cancellations / withdrawals",
+    "Group": "Non-trade",
+    "Contracts": 33035
+  }
+]

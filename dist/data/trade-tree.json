@@ -1,0 +1,85 @@
+[
+  {
+    "id": "root",
+    "parent": null,
+    "Occupation": "All shown trade groups",
+    "Contracts": 0,
+    "Label": []
+  },
+  {
+    "id": "0",
+    "parent": "root",
+    "Occupation": "Automotive & engineering",
+    "FullName": "Automotive and Engineering Trades Workers",
+    "Contracts": 58350,
+    "Label": [
+      "Automotive &",
+      "engineering"
+    ]
+  },
+  {
+    "id": "1",
+    "parent": "root",
+    "Occupation": "Construction",
+    "FullName": "Construction Trades Workers",
+    "Contracts": 59355,
+    "Label": [
+      "Construction"
+    ]
+  },
+  {
+    "id": "2",
+    "parent": "root",
+    "Occupation": "Electrical & telecoms",
+    "FullName": "Electrotechnology and Telecommunications Trades Workers",
+    "Contracts": 53845,
+    "Label": [
+      "Electrical &",
+      "telecoms"
+    ]
+  },
+  {
+    "id": "3",
+    "parent": "root",
+    "Occupation": "Engineering, ICT & science",
+    "FullName": "Engineering, ICT and Science Technicians",
+    "Contracts": 5145,
+    "Label": [
+      "Engineering, ICT &",
+      "science"
+    ]
+  },
+  {
+    "id": "4",
+    "parent": "root",
+    "Occupation": "Food trades",
+    "FullName": "Food Trades Workers",
+    "Contracts": 9970,
+    "Label": [
+      "Food trades"
+    ]
+  },
+  {
+    "id": "5",
+    "parent": "root",
+    "Occupation": "Other technicians & trades",
+    "FullName": "Other Technicians and Trades Workers",
+    "Contracts": 14330,
+    "Label": [
+      "Other",
+      "technicians &",
+      "trades"
+    ]
+  },
+  {
+    "id": "6",
+    "parent": "root",
+    "Occupation": "Animal, agricultural & horticultural",
+    "FullName": "Skilled Animal, Agricultural and Horticultural Workers",
+    "Contracts": 7950,
+    "Label": [
+      "Animal, agricultural &",
+      "horticultural"
+    ]
+  }
+]

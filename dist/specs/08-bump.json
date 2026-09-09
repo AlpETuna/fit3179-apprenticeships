@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 440,
+  "data": {
+    "url": "data/occupation-ranks.json"
+  },
+  "params": [
+    {
+      "name": "rankFocus",
+      "value": "Aged & disabled carers"
+    }
+  ],
+  "description": "Bump chart: annual ranks within the ten non-trade occupations with the most active contracts in 2025. These are not ranks among all occupations.",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      },
+      "scale": {
+        "zero": false,
+        "domain": [
+          2021,
+          2025.6
+        ]
+      }
+    },
+    "y": {
+      "field": "Rank",
+      "type": "quantitative",
+      "axis": {
+        "title": "Rank within the ten shown",
+        "values": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "scale": {
+        "domain": [
+          10.5,
+          0.5
+        ],
+        "zero": false
+      }
+    },
+    "detail": {
+      "field": "Occupation",
+      "type": "nominal"
+    },
+    "color": {
+      "condition": {
+        "test": "datum.Occupation === rankFocus",
+        "value": "#c45222"
+      },
+      "value": "#b7c7d2"
+    },
+    "tooltip": [
+      {
+        "field": "Occupation"
+      },
+      {
+        "field": "Year"
+      },
+      {
+        "field": "Rank"
+      },
+      {
+        "field": "Contracts",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "point": {
+          "filled": true,
+          "size": 50
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.Year === 2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "Rank"
+        },
+        "color": {
+          "value": "#132a40"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.Occupation === rankFocus"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 4,
+        "point": {
+          "filled": true,
+          "size": 90
+        }
+      }
+    }
+  ]
+}

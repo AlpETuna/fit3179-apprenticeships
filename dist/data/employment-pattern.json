@@ -1,0 +1,26 @@
+[
+  {
+    "Group": "Trade",
+    "Contracts": 208950,
+    "Arrangement": "Full-time",
+    "Percent": 92.0
+  },
+  {
+    "Group": "Trade",
+    "Contracts": 208950,
+    "Arrangement": "Part-time",
+    "Percent": 8.0
+  },
+  {
+    "Group": "Non-trade",
+    "Contracts": 73475,
+    "Arrangement": "Full-time",
+    "Percent": 55.7
+  },
+  {
+    "Group": "Non-trade",
+    "Contracts": 73475,
+    "Arrangement": "Part-time",
+    "Percent": 44.3
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "Cohort": "People with disability",
+    "Year": 2021,
+    "Contracts": 9340,
+    "Share": 2.687
+  },
+  {
+    "Cohort": "People with disability",
+    "Year": 2022,
+    "Contracts": 11095,
+    "Share": 2.975
+  },
+  {
+    "Cohort": "People with disability",
+    "Year": 2023,
+    "Contracts": 11110,
+    "Share": 3.294
+  },
+  {
+    "Cohort": "People with disability",
+    "Year": 2024,
+    "Contracts": 10900,
+    "Share": 3.527
+  },
+  {
+    "Cohort": "People with disability",
+    "Year": 2025,
+    "Contracts": 10695,
+    "Share": 3.787
+  },
+  {
+    "Cohort": "Indigenous Australians",
+    "Year": 2021,
+    "Contracts": 18585,
+    "Share": 5.346
+  },
+  {
+    "Cohort": "Indigenous Australians",
+    "Year": 2022,
+    "Contracts": 20585,
+    "Share": 5.52
+  },
+  {
+    "Cohort": "Indigenous Australians",
+    "Year": 2023,
+    "Contracts": 20535,
+    "Share": 6.089
+  },
+  {
+    "Cohort": "Indigenous Australians",
+    "Year": 2024,
+    "Contracts": 19840,
+    "Share": 6.419
+  },
+  {
+    "Cohort": "Indigenous Australians",
+    "Year": 2025,
+    "Contracts": 19170,
+    "Share": 6.788
+  },
+  {
+    "Cohort": "Language other than English",
+    "Year": 2021,
+    "Contracts": 35180,
+    "Share": 10.119
+  },
+  {
+    "Cohort": "Language other than English",
+    "Year": 2022,
+    "Contracts": 39765,
+    "Share": 10.664
+  },
+  {
+    "Cohort": "Language other than English",
+    "Year": 2023,
+    "Contracts": 33115,
+    "Share": 9.819
+  },
+  {
+    "Cohort": "Language other than English",
+    "Year": 2024,
+    "Contracts": 29380,
+    "Share": 9.506
+  },
+  {
+    "Cohort": "Language other than English",
+    "Year": 2025,
+    "Contracts": 26635,
+    "Share": 9.431
+  },
+  {
+    "Cohort": "Females",
+    "Year": 2021,
+    "Contracts": 98355,
+    "Share": 28.291
+  },
+  {
+    "Cohort": "Females",
+    "Year": 2022,
+    "Contracts": 110350,
+    "Share": 29.594
+  },
+  {
+    "Cohort": "Females",
+    "Year": 2023,
+    "Contracts": 92540,
+    "Share": 27.44
+  },
+  {
+    "Cohort": "Females",
+    "Year": 2024,
+    "Contracts": 79175,
+    "Share": 25.616
+  },
+  {
+    "Cohort": "Females",
+    "Year": 2025,
+    "Contracts": 69440,
+    "Share": 24.587
+  },
+  {
+    "Cohort": "Regional & remote",
+    "Year": 2021,
+    "Contracts": 129310,
+    "Share": 37.194
+  },
+  {
+    "Cohort": "Regional & remote",
+    "Year": 2022,
+    "Contracts": 137490,
+    "Share": 36.872
+  },
+  {
+    "Cohort": "Regional & remote",
+    "Year": 2023,
+    "Contracts": 129490,
+    "Share": 38.396
+  },
+  {
+    "Cohort": "Regional & remote",
+    "Year": 2024,
+    "Contracts": 121235,
+    "Share": 39.224
+  },
+  {
+    "Cohort": "Regional & remote",
+    "Year": 2025,
+    "Contracts": 111875,
+    "Share": 39.612
+  }
+]

@@ -1,0 +1,186 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Active apprenticeship and traineeship contracts at 31 December, Australia, 2016\u20132025. NCVER Figure 1, December 2025 release.",
+  "height": 340,
+  "data": {
+    "values": [
+      {
+        "year": 2016,
+        "Trade": 167505,
+        "Non-trade": 96455
+      },
+      {
+        "year": 2017,
+        "Trade": 168130,
+        "Non-trade": 93530
+      },
+      {
+        "year": 2018,
+        "Trade": 173480,
+        "Non-trade": 89255
+      },
+      {
+        "year": 2019,
+        "Trade": 175135,
+        "Non-trade": 84635
+      },
+      {
+        "year": 2020,
+        "Trade": 192225,
+        "Non-trade": 105430
+      },
+      {
+        "year": 2021,
+        "Trade": 216825,
+        "Non-trade": 130730
+      },
+      {
+        "year": 2022,
+        "Trade": 228050,
+        "Non-trade": 144740
+      },
+      {
+        "year": 2023,
+        "Trade": 226140,
+        "Non-trade": 111085
+      },
+      {
+        "year": 2024,
+        "Trade": 220460,
+        "Non-trade": 88600
+      },
+      {
+        "year": 2025,
+        "Trade": 208950,
+        "Non-trade": 73475
+      }
+    ]
+  },
+  "transform": [
+    {
+      "fold": [
+        "Trade",
+        "Non-trade"
+      ],
+      "as": [
+        "Group",
+        "Contracts"
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "title": null,
+        "format": "d",
+        "tickMinStep": 1,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "Contracts",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          0,
+          250000
+        ]
+      },
+      "axis": {
+        "title": "Active contracts",
+        "format": "~s"
+      }
+    },
+    "color": {
+      "field": "Group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Trade",
+          "Non-trade"
+        ],
+        "range": [
+          "#176b91",
+          "#c45222"
+        ]
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "31 December"
+      },
+      {
+        "field": "Group"
+      },
+      {
+        "field": "Contracts",
+        "type": "quantitative",
+        "format": ","
+      }
+    ],
+    "strokeDash": {
+      "field": "Group",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Trade",
+          "Non-trade"
+        ],
+        "range": [
+          [
+            1,
+            0
+          ],
+          [
+            6,
+            3
+          ]
+        ]
+      },
+      "legend": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3,
+        "point": {
+          "filled": true,
+          "size": 50
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year === 2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -4,
+        "dy": -14,
+        "fontWeight": 700,
+        "fontSize": 14
+      },
+      "encoding": {
+        "text": {
+          "field": "Contracts",
+          "format": ","
+        }
+      }
+    }
+  ]
+}

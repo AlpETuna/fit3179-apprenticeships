@@ -1,0 +1,202 @@
+[
+  {
+    "State": "New South Wales",
+    "Year": 2021,
+    "Contracts": 107100
+  },
+  {
+    "State": "New South Wales",
+    "Year": 2022,
+    "Contracts": 111645
+  },
+  {
+    "State": "New South Wales",
+    "Year": 2023,
+    "Contracts": 100725
+  },
+  {
+    "State": "New South Wales",
+    "Year": 2024,
+    "Contracts": 90630
+  },
+  {
+    "State": "New South Wales",
+    "Year": 2025,
+    "Contracts": 84340
+  },
+  {
+    "State": "Victoria",
+    "Year": 2021,
+    "Contracts": 73350
+  },
+  {
+    "State": "Victoria",
+    "Year": 2022,
+    "Contracts": 77495
+  },
+  {
+    "State": "Victoria",
+    "Year": 2023,
+    "Contracts": 70930
+  },
+  {
+    "State": "Victoria",
+    "Year": 2024,
+    "Contracts": 64400
+  },
+  {
+    "State": "Victoria",
+    "Year": 2025,
+    "Contracts": 57015
+  },
+  {
+    "State": "Queensland",
+    "Year": 2021,
+    "Contracts": 80440
+  },
+  {
+    "State": "Queensland",
+    "Year": 2022,
+    "Contracts": 90450
+  },
+  {
+    "State": "Queensland",
+    "Year": 2023,
+    "Contracts": 81820
+  },
+  {
+    "State": "Queensland",
+    "Year": 2024,
+    "Contracts": 76375
+  },
+  {
+    "State": "Queensland",
+    "Year": 2025,
+    "Contracts": 69925
+  },
+  {
+    "State": "South Australia",
+    "Year": 2021,
+    "Contracts": 24915
+  },
+  {
+    "State": "South Australia",
+    "Year": 2022,
+    "Contracts": 28040
+  },
+  {
+    "State": "South Australia",
+    "Year": 2023,
+    "Contracts": 23845
+  },
+  {
+    "State": "South Australia",
+    "Year": 2024,
+    "Contracts": 22130
+  },
+  {
+    "State": "South Australia",
+    "Year": 2025,
+    "Contracts": 21235
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2021,
+    "Contracts": 40385
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2022,
+    "Contracts": 44060
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2023,
+    "Contracts": 40950
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2024,
+    "Contracts": 38880
+  },
+  {
+    "State": "Western Australia",
+    "Year": 2025,
+    "Contracts": 35760
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2021,
+    "Contracts": 11100
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2022,
+    "Contracts": 11475
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2023,
+    "Contracts": 10220
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2024,
+    "Contracts": 8970
+  },
+  {
+    "State": "Tasmania",
+    "Year": 2025,
+    "Contracts": 7375
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2021,
+    "Contracts": 3220
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2022,
+    "Contracts": 3160
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2023,
+    "Contracts": 3240
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2024,
+    "Contracts": 3170
+  },
+  {
+    "State": "Northern Territory",
+    "Year": 2025,
+    "Contracts": 3035
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2021,
+    "Contracts": 7150
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2022,
+    "Contracts": 6550
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2023,
+    "Contracts": 5515
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2024,
+    "Contracts": 4525
+  },
+  {
+    "State": "Australian Capital Territory",
+    "Year": 2025,
+    "Contracts": 3745
+  }
+]

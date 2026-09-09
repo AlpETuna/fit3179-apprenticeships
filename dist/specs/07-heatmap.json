@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "height": 480,
+  "data": {
+    "url": "data/occupations.json"
+  },
+  "params": [
+    {
+      "name": "occupationGroup",
+      "value": "All"
+    }
+  ],
+  "transform": [
+    {
+      "filter": "occupationGroup === 'All' || datum.Group === occupationGroup"
+    }
+  ],
+  "description": "Heatmap: percentage change in active contracts relative to each occupation group\u2019s own 2021 baseline. Counts are independently rounded.",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "orient": "top"
+      }
+    },
+    "y": {
+      "field": "Occupation",
+      "type": "nominal",
+      "sort": [
+        "Automotive & engineering",
+        "Construction",
+        "Electrical & telecoms",
+        "Engineering, ICT & science",
+        "Food trades",
+        "Other technicians & trades",
+        "Animal, agricultural & horticultural",
+        "Clerical & administrative",
+        "Community & personal service",
+        "Labourers",
+        "Machinery operators & drivers",
+        "Managers",
+        "Professionals",
+        "Sales workers"
+      ],
+      "axis": {
+        "title": null,
+        "labelLimit": 280,
+        "labelFontSize": 13
+      }
+    },
+    "tooltip": [
+      {
+        "field": "FullName",
+        "title": "Occupation"
+      },
+      {
+        "field": "Year"
+      },
+      {
+        "field": "Contracts",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "ChangeFrom2021",
+        "type": "quantitative",
+        "format": ".1f",
+        "title": "Change from 2021 (%)"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "color": {
+          "field": "ChangeFrom2021",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -85,
+              0,
+              25
+            ],
+            "range": [
+              "#a94422",
+              "#f2f4f5",
+              "#176b91"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "title": "Change from 2021 (%)",
+            "gradientLength": 260
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 13
+      },
+      "encoding": {
+        "text": {
+          "field": "ChangeFrom2021",
+          "format": "+.0f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.ChangeFrom2021 < -40 || datum.ChangeFrom2021 > 15",
+            "value": "white"
+          },
+          "value": "#132a40"
+        }
+      }
+    }
+  ]
+}
